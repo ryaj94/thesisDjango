@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>isaas sample input</h1>
+    {% if result %}
+        {{result}}
+    {% endif %}
+    <form action="predict">
+        {% csrf_token %}
+        subject: <input type="text" name="subj1">
+        grade: <input type="text" name="grade1">
+        subject: <input type="text" name="subj2">
+        grade: <input type="text" name="grade2">
+        subject: <input type="text" name="subj3">
+        grade: <input type="text" name="grade3">
+        subject: <input type="text" name="subj4">
+        grade: <input type="text" name="grade4">
+        subject: <input type="text" name="subj5">
+        grade: <input type="text" name="grade5">
+        subject: <input type="text" name="subj6">
+        grade: <input type="text" name="grade6">
+        subject: <input type="text" name="subj7">
+        grade: <input type="text" name="grade7">
+
+        <input type="submit">
+    </form>
+</body>
+</html>
